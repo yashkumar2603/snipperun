@@ -42,10 +42,10 @@ async function Header() {
 
             <div className="flex flex-col">
               <span className="block text-lg font-semibold bg-gradient-to-r from-blue-400 via-blue-300 to-purple-400 text-transparent bg-clip-text">
-                CodeCraft
+                Snipperun
               </span>
               <span className="block text-xs text-blue-400/60 font-medium">
-                Interactive Code Editor
+                Run and Share code!
               </span>
             </div>
           </Link>
@@ -66,7 +66,7 @@ async function Header() {
                 className="text-sm font-medium relative z-10 group-hover:text-white
                  transition-colors"
               >
-                Snippets
+                See All Snippets
               </span>
             </Link>
           </nav>

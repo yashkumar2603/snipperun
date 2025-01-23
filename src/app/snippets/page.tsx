@@ -54,7 +54,7 @@ function SnippetsPage() {
              from-blue-500/10 to-purple-500/10 text-sm text-gray-400 mb-6"
           >
             <BookOpen className="w-4 h-4" />
-            Community Code Library
+            Community Snippet Library
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ function SnippetsPage() {
             transition={{ delay: 0.2 }}
             className="text-lg text-gray-400 mb-8"
           >
-            Explore a curated collection of code snippets from the community
+            Explore the collection of code snippets posted by users
           </motion.p>
         </div>
 
@@ -106,11 +106,10 @@ function SnippetsPage() {
                 onClick={() => setSelectedLanguage(lang === selectedLanguage ? null : lang)}
                 className={`
                     group relative px-3 py-1.5 rounded-lg transition-all duration-200
-                    ${
-                      selectedLanguage === lang
-                        ? "text-blue-400 bg-blue-500/10 ring-2 ring-blue-500/50"
-                        : "text-gray-400 hover:text-gray-300 bg-[#1e1e2e] hover:bg-[#262637] ring-1 ring-gray-800"
-                    }
+                    ${selectedLanguage === lang
+                    ? "text-blue-400 bg-blue-500/10 ring-2 ring-blue-500/50"
+                    : "text-gray-400 hover:text-gray-300 bg-[#1e1e2e] hover:bg-[#262637] ring-1 ring-gray-800"
+                  }
                   `}
               >
                 <div className="flex items-center gap-2">
@@ -139,21 +138,19 @@ function SnippetsPage() {
               <div className="flex items-center gap-1 p-1 bg-[#1e1e2e] rounded-lg ring-1 ring-gray-800">
                 <button
                   onClick={() => setView("grid")}
-                  className={`p-2 rounded-md transition-all ${
-                    view === "grid"
-                      ? "bg-blue-500/20 text-blue-400"
-                      : "text-gray-400 hover:text-gray-300 hover:bg-[#262637]"
-                  }`}
+                  className={`p-2 rounded-md transition-all ${view === "grid"
+                    ? "bg-blue-500/20 text-blue-400"
+                    : "text-gray-400 hover:text-gray-300 hover:bg-[#262637]"
+                    }`}
                 >
                   <Grid className="w-4 h-4" />
                 </button>
                 <button
                   onClick={() => setView("list")}
-                  className={`p-2 rounded-md transition-all ${
-                    view === "list"
-                      ? "bg-blue-500/20 text-blue-400"
-                      : "text-gray-400 hover:text-gray-300 hover:bg-[#262637]"
-                  }`}
+                  className={`p-2 rounded-md transition-all ${view === "list"
+                    ? "bg-blue-500/20 text-blue-400"
+                    : "text-gray-400 hover:text-gray-300 hover:bg-[#262637]"
+                    }`}
                 >
                   <Layers className="w-4 h-4" />
                 </button>
@@ -164,11 +161,10 @@ function SnippetsPage() {
 
         {/* Snippets Grid */}
         <motion.div
-          className={`grid gap-6 ${
-            view === "grid"
-              ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-              : "grid-cols-1 max-w-3xl mx-auto"
-          }`}
+          className={`grid gap-6 ${view === "grid"
+            ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+            : "grid-cols-1 max-w-3xl mx-auto"
+            }`}
           layout
         >
           <AnimatePresence mode="popLayout">
