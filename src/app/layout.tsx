@@ -18,9 +18,17 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Snipperun",
+  title: "Snipperun | Run and Share Code",
   description: "Run and Share Code Snippets",
+  icons: {
+    icon: [
+      {
+        url: '/light.svg'
+      },
+    ],
+  }
 };
+
 
 export default function RootLayout({
   children,
