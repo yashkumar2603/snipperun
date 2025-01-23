@@ -1,8 +1,10 @@
 export default {
   providers: [
     {
-      domain: "https://enabling-alien-47.clerk.accounts.dev/",
+      domain: "https://picked-muskox-92.clerk.accounts.dev/",
       applicationID: "convex",
     },
   ],
 };
+
+//https://picked-muskox-92.clerk.accounts.dev
