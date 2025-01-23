@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/light.svg" alt="Snipperun Logo" width="80" />
+  <img src="https://raw.githubusercontent.com/yashkumar2603/snipperun/refs/heads/main/public/light.svg" alt="Snipperun Logo" width="80" />
   <h1>Snipperun</h1>
   <p>A modern code execution and sharing platform</p>
 </div>
